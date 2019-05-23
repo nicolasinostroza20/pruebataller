@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:prueba1"
+             x:Class="prueba1.MainPage">
+
+    <StackLayout Padding="10,20,10,10" Spacing="15" BackgroundColor="gray">
+        <Label Text="Registro"
+                    Font="20"
+                    TextColor="white"
+                    BackgroundColor="silver"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="360" 
+                    HeightRequest="40"
+                    ></Label>
+        <Image x:Name="imageLogos" BackgroundColor="silver" 
+                    Source=""/>
+        <Entry x:Name="userEntry"
+                    Placeholder="Nombre"
+                    TextColor="white"
+                    WidthRequest="260"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                   ></Entry>
+        <Entry x:Name="rutEntry"
+                    Placeholder="Rut"
+                    TextColor="white"
+                    WidthRequest="260"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                 ></Entry>
+        <Entry x:Name="emailEntry"
+                    Placeholder="Email"
+                    TextColor="white"
+                    WidthRequest="260"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    ></Entry>
+        <Entry x:Name="passEntry"
+                    Placeholder="Password"
+                    IsPassword = "true"
+                    WidthRequest="260"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+            ></Entry>
+        <Entry x:Name="confirmapassEntry"
+                    Placeholder="Confirme Password"
+                    IsPassword = "true"
+                    WidthRequest="260"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+              ></Entry>
+
+        <Button x:Name="loginButton"
+                    Text="Aceptar"
+                    BackgroundColor="silver"
+                    TextColor="White"
+                    WidthRequest="260"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Clicked="LoginButton_Clicked"
+                ></Button>
+    </StackLayout>
+</ContentPage>
